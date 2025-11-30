@@ -25,7 +25,6 @@ export default function CarCard({ car }: CarCardProps) {
     img
   } = car;
 
-  // форматування кілометражу
   const formattedMileage = useMemo(
     () =>
       typeof mileage === "number"
@@ -34,11 +33,10 @@ export default function CarCard({ car }: CarCardProps) {
     [mileage]
   );
 
-  // місто, країна (видаляємо вулицю)
   const [city, country] = (address ?? "")
     .split(",")
     .map((p) => p.trim())
-    .slice(-2); // беремо тільки 2 останні значення: Місто, Країна
+    .slice(-2); 
 
   const metaItems = [
     city,
