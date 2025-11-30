@@ -1,0 +1,118 @@
+.card {
+  width: 276px;
+  height: 424px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  background: transparent;
+}
+
+/* =========================== */
+/*           IMAGE             */
+/* =========================== */
+
+.imageWrapper {
+  position: relative;
+  width: 276px;
+  height: 268px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* heart icon top-right */
+.favorite {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+/* =========================== */
+/*        TITLE & PRICE        */
+/* =========================== */
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #121417;
+}
+
+.model {
+  color: #3470ff;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121417;
+}
+
+/* =========================== */
+/*        META LIST            */
+/* =========================== */
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 4px;
+  margin: 0;
+  gap: 4px 8px;
+  font-size: 14px;
+  color: #8a8a89;
+}
+
+/* vertical separator */
+.meta li {
+  position: relative;
+}
+
+.meta li + li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background: #8a8a89;
+}
+
+/* =========================== */
+/*         READ MORE           */
+/* =========================== */
+
+.readMore {
+  margin-top: auto;
+  display: block;
+  width: 276px;
+  height: 44px;
+  padding: 12px 0;
+
+  text-align: center;
+  background: #3470ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+  border-radius: 12px;
+
+  margin-top: 28px;
+}
+
+.readMore:hover {
+  background: #0b44cd;
+}

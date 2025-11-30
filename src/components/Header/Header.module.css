@@ -1,0 +1,65 @@
+/* Global header styles */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  background-color: var(--color-white);
+  border-bottom: 1px solid #e5e5ef;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.logoPrimary {
+  color: var(--color-text);
+}
+
+.logoAccent {
+  color: var(--color-primary);
+  margin-left: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+}
+
+.navLink,
+.navLinkActive {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.navLink {
+  color: var(--color-text);
+}
+
+.navLinkActive {
+  color: var(--color-primary);
+}
+
+.navLinkActive::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--color-primary);
+}

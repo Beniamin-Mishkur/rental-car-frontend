@@ -1,0 +1,67 @@
+/* Home page hero section */
+
+.main {
+  min-width: 1440;
+  min-height: calc(100vh - 64px);
+  background-color: #000;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px 80px;
+  color: var(--color-white);
+}
+
+.title {
+  font-family: "Manrope", sans-serif;
+font-weight: 700;
+font-size: 60px;
+line-height: 1.2;
+text-align: center;
+color: #fff;
+padding-top: 438px;
+margin: 0px 0px 0px 0px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 11px ;
+  margin-bottom: 36px;
+}
+
+.heroBtn {
+border-radius: 12px;
+padding: 12px 88px;
+width: 276px;
+height: 44px;
+background: #3470ff;
+
+font-size: 16px;
+
+line-height: 1.25;
+color: #fff;
+}
+
+.heroBtn:hover {
+  background: #0b44cd;
+  transform: translateY(-1px);
+}

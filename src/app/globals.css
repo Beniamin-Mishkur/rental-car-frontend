@@ -1,0 +1,39 @@
+/* Global styles and CSS variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #3470ff;
+  --color-accent: #0b44cd;
+  --color-bg: #f7f7fb;
+  --color-text: #121417;
+  --color-gray-light: #f2f4f7;
+  --color-gray: #8a8a89;
+  --color-white: #ffffff;
+  --border-radius: 12px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,196 @@
+/* Car detail page layout — image + booking form on the left, info on the right */
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 40px;
+}
+
+.topRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Left column */
+
+.leftColumn {
+  flex: 1 1 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 62%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* Booking form card under the image */
+
+.formCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  padding: 24px 24px 28px;
+}
+
+.formTitle {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #121417;
+}
+
+.formSubtitle {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #8a8a89;
+}
+
+/* Right column with text details */
+
+.rightColumn {
+  flex: 1 1 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #121417;
+}
+
+.model {
+  color: #3470ff;
+}
+
+.id {
+  margin-left: 16px;
+  font-size: 14px;
+  color: #8a8a89;
+}
+
+/* Location + mileage row */
+
+.locationRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: #8a8a89;
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mileageValue {
+  font-weight: 500;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3470ff;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #121417;
+}
+
+/* Sections with icon bullets */
+
+.section {
+  margin-top: 8px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #121417;
+}
+
+.iconList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #121417;
+}
+
+.iconList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Generic icon box */
+
+.icon {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Specific icons from SVG set */
+
+.iconLocation {
+  background-image: url("/icons/Location-icon.svg");
+}
+
+.iconCheck {
+  background-image: url("/icons/checkmark-icon.svg");
+}
+
+.iconCalendar {
+  background-image: url("/icons/callendar-icon.svg");
+}
+
+.iconCar {
+  background-image: url("/icons/car-icon.svg");
+}
+
+.iconFuel {
+  background-image: url("/icons/fuel-pump-icon.svg");
+}
+
+.iconGear {
+  background-image: url("/icons/gear-icon.svg");
+}
+
+/* Simple responsiveness */
+
+/* @media (max-width: 900px) {
+  .topRow {
+    flex-direction: column;
+  }
+} */
